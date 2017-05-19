@@ -1,13 +1,14 @@
 import { inRange } from 'lodash';
 import { actions } from 'react-redux-form';
 
-// ACTIONS
+// ACTION TYPES
 export const HOOVER_HAS_MOVED = 'HOOVER_HAS_MOVED';
 export const BOARD_HAS_CHANGED = 'BOARD_HAS_CHANGED';
 export const REMOVE_DIRT = 'REMOVE_DIRT';
 export const TOGGLE_DRAWER = 'TOGGLE_DRAWER';
 export const FORM_SUBMISSION = 'FORM_SUBMISSION';
 
+// ACTIONS
 export const move = (x,y) => {
   return {
     type: HOOVER_HAS_MOVED,
@@ -52,6 +53,7 @@ export const moveHoover = (x, y) => {
     const Dirt = getState().gameState.dirt;
     const newDirt = Dirt.filter(dirt => dirt.x !== newX || dirt.y !== newY);
 
+    // if in range dispatch move
     if(inRange(newX, 1, maxWidth + 1) && inRange(newY, 1, maxHeight + 1)) {
         dispatch(move(x, y));
     };
