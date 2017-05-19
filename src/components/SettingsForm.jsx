@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { toNumber } from 'lodash';
 import { Control, Form } from 'react-redux-form';
 
@@ -119,10 +120,24 @@ const SettingsForm = (props) => {
           )}
         </section>
         <div className={styles.submitBlock}>
-          <Button type="submit" accent raised>Go</Button>
+          <Button type="submit" accent raised>Reset Game</Button>
         </div>
       </Form>
     )
   }
+
+SettingsForm.propTypes = {
+  board: PropTypes.shape({
+    width: PropTypes.number.isRequired,
+    height: PropTypes.number.isRequired
+  }),
+  dirt: PropTypes.arrayOf(
+      PropTypes.shape({
+        x: PropTypes.number.isRequired,
+        y: PropTypes.number.isRequired,
+      }),
+  ).isRequired,
+  formSubmission: PropTypes.func.isRequired,
+};
 
 export default SettingsForm;
