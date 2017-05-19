@@ -1,0 +1,41 @@
+@import './variables.css';
+
+.button {
+  font-family: monospace;
+	border-radius: 3px;
+  background: #fff;
+	box-shadow: 3px 3px 0 var(--dark-gray);
+  width: 100px;
+  height: 40px;
+}
+
+.controls {
+  position: relative;
+  width: 240px;
+  height: 160px;
+  margin-top: 20px;
+}
+
+.up, .down, .left, .right {
+  composes: button;
+  position: absolute;
+}
+
+.up {
+  left: calc(50% - 50px);
+}
+
+.left {
+  left: 0;
+  top: calc(50% - 20px);
+}
+
+.right {
+  right: 0;
+  top: calc(50% - 20px);
+}
+
+.down {
+  bottom: 0;
+  left: calc(50% - 50px);
+}

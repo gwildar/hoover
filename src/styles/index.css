@@ -1,0 +1,26 @@
+/*
+  Import fonts and icons.
+  NOTE: in a real project these should be self hosted
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:600');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@import './variables.css';
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: var(--gray);
+}
+
+FIELDSET {
+  border: none;
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+
+LEGEND {
+  font-size: 12px;
+}

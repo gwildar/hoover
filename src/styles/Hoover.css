@@ -1,0 +1,11 @@
+.hoover {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition-property: left bottom;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}

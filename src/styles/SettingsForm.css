@@ -1,0 +1,46 @@
+.form {
+  margin: 0;
+  padding: 0;
+}
+
+
+.formGroup {
+  display: flex;
+  flex-direction: row;
+}
+
+.formGroup DIV:first-child {
+  margin-right: 10px;
+}
+
+.dirtSpots {
+  margin: 10px 0;
+}
+
+.dirtSpotsTitle {
+  margin-left: 0;
+}
+
+.sliderContainer {
+  margin-left: -15px;
+}
+
+.starts {
+  display: flex;
+  flex-direction: row;
+}
+
+.control {
+  width: 50px;
+}
+/*
+.submitBlock {
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  padding: 30px 10px;
+  bottom: 0;
+  left: 0;
+}
+
+*/
