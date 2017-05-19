@@ -13,6 +13,8 @@ import styles from '../styles/SettingsForm.css';
 // Using HTML5 validation for the sake of expedience.
 // In a real app this isn't usable due to browser bugs and inconsistencies.
 
+// TODO: make carpet pattern switcher
+
 const SettingsForm = (props) => {
     return (
       <Form

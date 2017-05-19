@@ -25,11 +25,20 @@
   background-size:100px 100px;
 }
 
+.waves {
+    /* css pattern from http://lea.verou.me/css3patterns/#waves */
+  background:
+  radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent),
+  radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent) 0 -50px;
+  background-color: #CCC;
+  background-size:75px 100px;
+}
+
 .carpet {
   width: 200px;
   height: 200px;
   position: relative;
-  composes: hearts;
+  composes: waves;
   border: 3px solid var(--dark-gray);
   border-radius: 4px;
 }

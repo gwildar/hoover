@@ -4,5 +4,6 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  background: rgba(0,0,0, 0.3);
+  background: url(../dirt.png);
+  background-size: 100% 100%;
 }
