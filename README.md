@@ -2,6 +2,7 @@
 
 A small hoover game app. Built on react-create-app, with additional configuration for css-modules.
 
+Tested: in Chrome, Firefox, Safari, and Edge.
 
 ## Initial install
 
