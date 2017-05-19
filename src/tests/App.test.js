@@ -1,8 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { Provider } from 'react-redux';
+import configureStore from '../configureStore';
+import AppContainer from '../containers/AppContainer';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-});
+// use default store
+const store = configureStore();
+
+const baseApp =
+<Provider store={store}>
+    <AppContainer />
+</Provider>;
+
+describe('App', () => {
+  it('renders without crashing', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(baseApp, div);
+  });
+})
